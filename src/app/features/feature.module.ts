@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ListContainerComponent } from './components/list-container/list-container.component';
 import { ListCardComponent } from './components/list-card/list-card.component';
-import { MainListComponent } from './pages/main-list.component';
+import { MainFeatureComponent } from './pages/main-feature.component';
 
 
 
@@ -11,13 +11,13 @@ import { MainListComponent } from './pages/main-list.component';
   declarations: [
     ListContainerComponent,
     ListCardComponent,
-    MainListComponent
+    MainFeatureComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    MainListComponent
+    MainFeatureComponent
   ]
 })
-export class ListModule { }
+export class FeatureModule { }

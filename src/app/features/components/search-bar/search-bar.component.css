@@ -1,0 +1,13 @@
+/* CSS */
+:root {
+  --clr-forms-input-padding: 10px;
+  --clr-forms-input-wrapper-height: 50px;
+}
+
+.clr-input {
+  padding: var(--clr-forms-input-padding);
+}
+
+.clr-input-wrapper {
+  height: var(--clr-forms-input-wrapper-height);
+}

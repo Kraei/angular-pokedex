@@ -1,9 +1,12 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListModule } from './list/list.module';
+import { FeatureModule } from './features/feature.module';
+import { ClarityModule } from '@clr/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchBarModule } from './features/search-bar.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,9 +15,14 @@ import { ListModule } from './list/list.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ListModule
+    FeatureModule,
+    BrowserAnimationsModule,
+    ClarityModule,
+    SearchBarModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
