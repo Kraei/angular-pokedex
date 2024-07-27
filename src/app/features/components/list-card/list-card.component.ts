@@ -8,5 +8,5 @@ import { Ability } from '../../interfaces/service.interface';
 })
 export class ListCardComponent {
   @Input()
-  public abilitiesList;
+  public abilitiesList: Ability[] = [];
 }
