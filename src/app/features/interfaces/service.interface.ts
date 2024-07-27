@@ -21,10 +21,6 @@ export interface SearchData {
   weight:                   number;
 }
 
-export interface pokemonInfo {
-  abilities: Ability[];
-}
-
 export interface Ability {
   ability:   Species;
   is_hidden: boolean;
